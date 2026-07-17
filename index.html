@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candela Store · Sábanas, mates, termos y todo para tu hogar</title>
+<meta name="description" content="Sábanas, frazadas, mates, termos, vasos térmicos y mucho más para tu hogar. Con stock y por encargue.">
+
+<!-- Vista previa al compartir (WhatsApp, Instagram, etc.) -->
+<!-- IMPORTANTE: reemplazar TU-DOMINIO por el dominio real una vez publicado el sitio -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Candela Store · Todo para tu hogar">
+<meta property="og:description" content="Sábanas, frazadas, mates, termos, vasos térmicos y mucho más. Con stock y por encargue.">
+<meta property="og:image" content="https://TU-DOMINIO/images/og-cover.jpg">
+<meta property="og:url" content="https://TU-DOMINIO/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Candela Store · Todo para tu hogar">
+<meta name="twitter:description" content="Sábanas, frazadas, mates, termos, vasos térmicos y mucho más. Con stock y por encargue.">
+<meta name="twitter:image" content="https://TU-DOMINIO/images/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#inicio" class="logo">🧉 Candela <span>Store</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#testimonios">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="icon-btn" id="cartToggle" aria-label="Carrito">
+        🛒
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero__inner">
+      <div class="hero__text reveal">
+        <span class="badge">Con stock y por encargue</span>
+        <h1>Todo lo que tu hogar<br class="hero__break"> necesita, en un solo lugar</h1>
+        <p>Sábanas, frazadas, mates, termos, vasos térmicos y mucho más.
+          Calidad y diseño pensados para tu día a día.</p>
+        <div class="hero__cta">
+          <a href="#coleccion" class="btn btn--primary">Ver catálogo</a>
+          <a href="#nosotros" class="btn btn--ghost">Conocer más</a>
+        </div>
+      </div>
+
+      <div class="hero__art reveal">
+        <div class="hero__blob"></div>
+        <button class="photo-card photo-card--1" data-category="Sábanas" aria-label="Ver sábanas">
+          <img src="images/set-sabanas-4-piezas.jpeg" alt="Sábanas">
+          <span class="photo-card__label">Sábanas</span>
+        </button>
+        <button class="photo-card photo-card--2" data-category="Mates y termos" aria-label="Ver mates y termos">
+          <img src="images/termo-mate.jpeg" alt="Mates y termos">
+          <span class="photo-card__label">Mates y termos</span>
+        </button>
+        <button class="photo-card photo-card--3" data-category="Vasos" aria-label="Ver vasos">
+          <img src="images/vaso-stanley.jpeg" alt="Vasos">
+          <span class="photo-card__label">Vasos</span>
+        </button>
+        <span class="hero__sticker">✨ Nuevos ingresos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="features">
+    <div class="container features__grid">
+      <div class="feature reveal">
+        <div class="feature__icon feature__icon--rose">📦</div>
+        <h3>Con stock o por encargue</h3>
+        <p>Te avisamos la disponibilidad de cada producto.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon feature__icon--mint">✅</div>
+        <h3>Calidad garantizada</h3>
+        <p>Productos seleccionados para que duren.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon feature__icon--lavender">🎁</div>
+        <h3>Ideal para regalar</h3>
+        <p>Sets y combos para cualquier ocasión.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon feature__icon--cream">💳</div>
+        <h3>Pagá con Mercado Pago</h3>
+        <p>Comprá fácil y seguro, sin salir de la página.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLECCIÓN -->
+  <section class="collection" id="coleccion">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Nuestra colección</span>
+        <h2>Encuentra todo para tu hogar</h2>
+        <p>Una selección de nuestros productos más elegidos, ideales para tu casa o para regalar.</p>
+      </div>
+
+      <p class="collection__notice reveal">
+        💬 Todo lo que ves acá está disponible ahora. Si justo se agotó lo que buscabas, preguntanos y te lo conseguimos igual.
+      </p>
+
+      <div class="filters" id="categoryFilters"></div>
+
+      <div class="products" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="container about__inner">
+      <div class="about__art reveal">
+        <div class="hero__blob about__blob"></div>
+        <button class="photo-card photo-card--1" data-category="Acolchados" aria-label="Ver acolchados">
+          <img src="images/acolchado-capibara.jpeg" alt="Acolchados">
+          <span class="photo-card__label">Acolchados</span>
+        </button>
+        <button class="photo-card photo-card--2" data-category="Textiles" aria-label="Ver textiles">
+          <img src="images/toallon.jpeg" alt="Textiles">
+          <span class="photo-card__label">Textiles</span>
+        </button>
+        <button class="photo-card photo-card--3" data-category="Otros" aria-label="Ver más productos">
+          <img src="images/mochila-capibara.jpeg" alt="Y mucho más">
+          <span class="photo-card__label">Y mucho más</span>
+        </button>
+        <span class="hero__sticker">🏡 Hecho para tu hogar</span>
+      </div>
+      <div class="about__text reveal">
+        <span class="eyebrow">Nuestra historia</span>
+        <h2>Confort y calidad para cada rincón de tu casa</h2>
+        <p>En Candela Store seleccionamos con cuidado sábanas, frazadas,
+          mates, termos y todos los productos que hacen a tu día a día más
+          cómodo. Trabajamos con materiales de calidad para que cada
+          artículo te acompañe por mucho tiempo.</p>
+        <ul class="about__list">
+          <li>✔️ Materiales seleccionados y duraderos</li>
+          <li>✔️ Variedad de diseños y colores</li>
+          <li>✔️ Pagos seguros con Mercado Pago</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Testimonios</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div class="testimonials__grid" id="testimonialsGrid"></div>
+
+      <form class="testimonial-form reveal" id="testimonialForm">
+        <h3>Dejanos tu opinión</h3>
+        <input type="text" id="testimonialName" placeholder="Tu nombre" maxlength="40" required>
+        <textarea id="testimonialText" placeholder="Contanos tu experiencia con Candela Store..." maxlength="280" required></textarea>
+        <button type="submit" class="btn btn--primary">Publicar comentario</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner reveal">
+      <h2>Hablemos</h2>
+      <p>Escribinos y te ayudamos a elegir, coordinar el pago y la entrega de tu pedido.</p>
+      <div class="contact__links">
+        <a href="https://wa.me/5493426301798" target="_blank" rel="noopener" class="btn btn--primary">
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/candela.store_/" target="_blank" rel="noopener" class="btn btn--ghost">
+          Instagram
+        </a>
+      </div>
+
+      <div class="contact__channel">
+        <p>¿Querés ser el primero en enterarte de las novedades y promos? Sumate a nuestro canal de difusión.</p>
+        <a href="https://www.whatsapp.com/channel/0029VbD6aKgEawduckIbK61a?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnXy1WEgOizSRLzXK8VjAa_M9pppagUpDdBC5CBJpUdkxynIxfNht7XJjoxEA_aem_jOzHFVm9HFPmP_f--FAx6w"
+           target="_blank" rel="noopener" class="btn btn--small contact__channel-btn">
+          📣 Unirme al canal
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="#inicio" class="logo logo--footer">🧉 Candela <span>Store</span></a>
+      <p>Todo para tu hogar, con calidad y estilo.</p>
+      <div class="footer__social">
+        <a href="https://wa.me/5493426301798" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsApp">💬</a>
+        <a href="https://www.instagram.com/candela.store_/" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram">📷</a>
+      </div>
+    </div>
+    <div class="footer__links">
+      <div>
+        <h4>Explorar</h4>
+        <a href="#coleccion">Colección</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Opiniones</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5493426301798" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#contacto">Ver más</a>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <a href="https://www.instagram.com/candela.store_/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 Candela Store. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<div class="modal" id="productModal">
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__content">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+
+    <div class="modal__media">
+      <button class="modal__arrow modal__arrow--left" id="modalPrev" aria-label="Anterior">‹</button>
+      <div class="modal__media-inner" id="modalMediaInner"></div>
+      <button class="modal__arrow modal__arrow--right" id="modalNext" aria-label="Siguiente">›</button>
+    </div>
+
+    <div class="modal__dots" id="modalDots"></div>
+
+    <div class="modal__info">
+      <div class="modal__info-top">
+        <span class="product-card__category" id="modalCategory"></span>
+        <span class="stock-badge" id="modalStock"></span>
+      </div>
+      <h3 id="modalName"></h3>
+      <div class="product-card__footer">
+        <span class="price" id="modalPrice"></span>
+        <button class="btn btn--small" id="modalBuy">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer__backdrop" id="cartBackdrop"></div>
+  <div class="cart-drawer__panel">
+    <div class="cart-drawer__header">
+      <h3>Tu carrito</h3>
+      <button class="modal__close" id="cartClose" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="cart-drawer__items" id="cartItems"></div>
+    <p class="cart-drawer__empty" id="cartEmpty">Tu carrito está vacío.</p>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <div class="cart-drawer__field">
+        <label for="buyerName">Tu nombre y apellido</label>
+        <input type="text" id="buyerName" placeholder="Ej: Juana Pérez" maxlength="60">
+        <span class="cart-drawer__field-error" id="buyerNameError">Ingresá tu nombre para continuar.</span>
+      </div>
+      <button class="btn btn--primary cart-drawer__checkout" id="checkoutBtn">Pagar con Mercado Pago</button>
+      <button class="cart-drawer__secondary" id="checkoutEmailBtn">¿No te llegó confirmación? Enviar por tu correo</button>
+      <p class="cart-drawer__note" id="checkoutNote">
+        Al pagar, te avisamos automáticamente a nosotros con tu nombre y el detalle del pedido.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/testimonials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
