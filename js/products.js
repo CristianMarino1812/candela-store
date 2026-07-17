@@ -50,6 +50,10 @@ const PRODUCTS = [
     ],
   },
   {
+    category: "Mates y termos", name: "Termo Selección AFA", price: 24000, stock: "stock", mpLink: "#",
+    media: [{ type: "image", src: "images/termo-seleccion-afa.jpeg" }],
+  },
+  {
     category: "Sábanas", name: "Sábana de niño", price: 25000, stock: "stock", mpLink: "#",
     media: [{ type: "image", src: "images/sabana-de-nino.jpeg" }],
   },
