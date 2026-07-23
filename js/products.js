@@ -55,7 +55,11 @@ const PRODUCTS = [
   },
   {
     category: "Sábanas", name: "Sábana de niño", price: 25000, stock: "stock", mpLink: "#",
-    media: [{ type: "image", src: "images/sabana-de-nino.jpeg" }],
+    media: [
+      { type: "image", src: "images/sabana-de-nino.jpeg" },
+      { type: "image", src: "images/set-sabanas-intensamente2.jpeg" },
+      { type: "image", src: "images/set-sabanas-intensamente2-atras.jpeg" },
+    ],
   },
   {
     category: "Sábanas", name: "Set de sábanas 2 plazas 4 piezas", price: 30000, stock: "stock", mpLink: "#",
@@ -140,13 +144,6 @@ const PRODUCTS = [
   {
     category: "Sábanas", name: "Set de sábanas 2 plazas 3 piezas", price: 25000, stock: "stock", mpLink: "#",
     media: [{ type: "image", src: "images/set-sabanas-3-piezas.jpeg" }],
-  },
-  {
-    category: "Sábanas", name: "Set de sábanas Disney Intensamente 2 (Twin XL)", price: 28000, stock: "stock", mpLink: "#",
-    media: [
-      { type: "image", src: "images/set-sabanas-intensamente2.jpeg" },
-      { type: "image", src: "images/set-sabanas-intensamente2-atras.jpeg" },
-    ],
   },
   {
     category: "Vasos", name: "Vaso Stanley con termómetro digital", price: 18000, stock: "stock", mpLink: "#",
