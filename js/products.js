@@ -111,6 +111,7 @@ const PRODUCTS = [
       { type: "image", src: "images/mochila-capibara-2.jpeg" },
       { type: "image", src: "images/mochila-capibara-angulo.jpeg" },
       { type: "image", src: "images/mochila-capibara-angulo-2.jpeg" },
+      { type: "image", src: "images/mochila-peluche-capibara.jpeg" },
       { type: "video", src: "videos/mochila-capibara.mp4" },
     ],
   },
@@ -153,10 +154,6 @@ const PRODUCTS = [
       { type: "image", src: "images/vaso-stanley-termometro-negro.jpeg" },
       { type: "image", src: "images/vaso-stanley-termometro-negro-tapa.jpeg" },
     ],
-  },
-  {
-    category: "Otros", name: "Mochila de peluche capibara", price: 22000, stock: "stock", mpLink: "#",
-    media: [{ type: "image", src: "images/mochila-peluche-capibara.jpeg" }],
   },
 ];
 
