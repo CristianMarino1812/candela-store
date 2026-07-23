@@ -106,6 +106,7 @@ const PRODUCTS = [
       { type: "image", src: "images/mochila-capibara-2.jpeg" },
       { type: "image", src: "images/mochila-capibara-angulo.jpeg" },
       { type: "image", src: "images/mochila-capibara-angulo-2.jpeg" },
+      { type: "video", src: "videos/mochila-capibara.mp4" },
     ],
   },
   {
@@ -124,12 +125,44 @@ const PRODUCTS = [
     ],
   },
   {
-    category: "Textiles", name: "Toallón", price: 15000, stock: "stock", mpLink: "#",
+    category: "Toallones", name: "Toallón", price: 15000, stock: "stock", mpLink: "#",
     media: [{ type: "image", src: "images/toallon.jpeg" }],
+  },
+  {
+    category: "Toallones", name: "Toallón económico", price: 10000, stock: "stock", mpLink: "#",
+    media: [
+      { type: "image", src: "images/toallon-economico-rosa.jpeg" },
+      { type: "image", src: "images/toallon-economico-terracota.jpeg" },
+      { type: "video", src: "videos/toallon-economico.mp4" },
+    ],
   },
   {
     category: "Sábanas", name: "Set de sábanas 2 plazas 3 piezas", price: 25000, stock: "stock", mpLink: "#",
     media: [{ type: "image", src: "images/set-sabanas-3-piezas.jpeg" }],
+  },
+  {
+    category: "Sábanas", name: "Set de sábanas Disney Intensamente 2 (Twin XL)", price: 28000, stock: "stock", mpLink: "#",
+    media: [
+      { type: "image", src: "images/set-sabanas-intensamente2.jpeg" },
+      { type: "image", src: "images/set-sabanas-intensamente2-atras.jpeg" },
+    ],
+  },
+  {
+    category: "Vasos", name: "Vaso Stanley con termómetro digital", price: 32000, stock: "stock", mpLink: "#",
+    media: [
+      { type: "image", src: "images/vaso-stanley-termometro-rosa.jpeg" },
+      { type: "image", src: "images/vaso-stanley-termometro-rosa-tapa.jpeg" },
+      { type: "image", src: "images/vaso-stanley-termometro-negro.jpeg" },
+      { type: "image", src: "images/vaso-stanley-termometro-negro-tapa.jpeg" },
+    ],
+  },
+  {
+    category: "Vasos", name: "Vaso The Monsters con muñeco", price: 24000, stock: "stock", mpLink: "#",
+    media: [{ type: "image", src: "images/vaso-monsters-fall-in-wild.jpeg" }],
+  },
+  {
+    category: "Otros", name: "Mochila de peluche capibara", price: 22000, stock: "stock", mpLink: "#",
+    media: [{ type: "image", src: "images/mochila-peluche-capibara.jpeg" }],
   },
 ];
 
