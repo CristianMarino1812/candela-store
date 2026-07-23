@@ -84,6 +84,7 @@ const PRODUCTS = [
     media: [
       { type: "image", src: "images/vaso-con-pajita.jpeg" },
       { type: "image", src: "images/vaso-con-pajita-2.jpeg" },
+      { type: "image", src: "images/vaso-monsters-fall-in-wild.jpeg" },
       { type: "video", src: "videos/vaso-con-pajita.mp4" },
     ],
   },
@@ -148,17 +149,13 @@ const PRODUCTS = [
     ],
   },
   {
-    category: "Vasos", name: "Vaso Stanley con termómetro digital", price: 32000, stock: "stock", mpLink: "#",
+    category: "Vasos", name: "Vaso Stanley con termómetro digital", price: 18000, stock: "stock", mpLink: "#",
     media: [
       { type: "image", src: "images/vaso-stanley-termometro-rosa.jpeg" },
       { type: "image", src: "images/vaso-stanley-termometro-rosa-tapa.jpeg" },
       { type: "image", src: "images/vaso-stanley-termometro-negro.jpeg" },
       { type: "image", src: "images/vaso-stanley-termometro-negro-tapa.jpeg" },
     ],
-  },
-  {
-    category: "Vasos", name: "Vaso The Monsters con muñeco", price: 24000, stock: "stock", mpLink: "#",
-    media: [{ type: "image", src: "images/vaso-monsters-fall-in-wild.jpeg" }],
   },
   {
     category: "Otros", name: "Mochila de peluche capibara", price: 22000, stock: "stock", mpLink: "#",
