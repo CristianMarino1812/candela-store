@@ -84,7 +84,7 @@ const PRODUCTS = [
     ],
   },
   {
-    category: "Vasos", name: "Vasos con pajita", price: 17000, stock: "stock", mpLink: "#",
+    category: "Vasos", name: "Vasos Labubu", price: 17000, stock: "stock", mpLink: "#",
     media: [
       { type: "image", src: "images/vaso-con-pajita.jpeg" },
       { type: "image", src: "images/vaso-con-pajita-2.jpeg" },
